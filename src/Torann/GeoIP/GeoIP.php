@@ -196,6 +196,7 @@ class GeoIP {
 				"lon" 			=> $record->location->longitude,
 				"timezone" 		=> $record->location->timeZone,
 				"continent"		=> $record->continent->code,
+				"all"			=> $record,
 				"default"       => false,
 			);
 		}
