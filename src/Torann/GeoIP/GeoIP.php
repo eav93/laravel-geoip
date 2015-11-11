@@ -190,13 +190,12 @@ class GeoIP {
 				"isoCode" 		=> $record->country->isoCode,
 				"country" 		=> $record->country->name,
 				"city" 			=> $record->city->name,
-				"state" 		=> $record->mostSpecificSubdivision->isoCode,
+				"state" 		=> $record->mostSpecificSubdivision->name,
 				"postal_code"   => $record->postal->code,
 				"lat" 			=> $record->location->latitude,
 				"lon" 			=> $record->location->longitude,
 				"timezone" 		=> $record->location->timeZone,
 				"continent"		=> $record->continent->code,
-				"all"			=> $record,
 				"default"       => false,
 			);
 		}
