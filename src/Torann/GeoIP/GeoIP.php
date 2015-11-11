@@ -178,7 +178,7 @@ class GeoIP {
 				$this->maxmind = new Client($settings['user_id'], $settings['license_key']);
 			}
 			else {
-				$this->maxmind = new Reader($settings['database_path']);
+				$this->maxmind = new Reader($settings['database_path'],$settings['locales']);
 			}
 		}
 
